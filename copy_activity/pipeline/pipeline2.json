@@ -68,7 +68,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/anjalibharath712@gmail.com/Gold Layer"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks3",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
