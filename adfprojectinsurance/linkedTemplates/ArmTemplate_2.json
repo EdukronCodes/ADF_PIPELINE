@@ -83,6 +83,33 @@
 								"parameters": {}
 							}
 						]
+					},
+					{
+						"name": "Notebook1",
+						"type": "DatabricksNotebook",
+						"dependsOn": [
+							{
+								"activity": "Copy data1",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"notebookPath": "/Users/anjalibharath712@gmail.com/Gold Layer"
+						},
+						"linkedServiceName": {
+							"referenceName": "AzureDatabricks3",
+							"type": "LinkedServiceReference"
+						}
 					}
 				],
 				"policy": {
